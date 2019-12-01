@@ -45,10 +45,22 @@ function juntar(e) {
 function revisar(){
 	alert("Tuviste bien "+bien+" aciertos de 6.");
 }
-/**for (var i = 0; i < elementos.length; i++) {
-	elementos[i].addEventListener("click", function(event) {
-		if( uno == null )
-			uno = this;
-		alert(uno.id);
-	});
-}*/
+
+function reset() {
+	bien = 0;
+	actuales = [];
+	contador = 0;
+	uno = null;
+	var one = document.querySelectorAll(".uno");
+	var two = document.querySelectorAll(".dos");
+	one.forEach((element)=>{
+	    element.style.backgroundColor = "var(--gris-claro)";
+	})
+	two.forEach((element)=>{
+	    element.style.backgroundColor = "var(--gris-oscuro)";
+	})
+	cartas.forEach((element)=>{
+	    element.addEventListener("click", juntar)
+	    element.value = 0;
+	})
+}

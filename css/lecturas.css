@@ -123,3 +123,13 @@
 	width: 8vw;
 	margin-right: 2vw;
 }
+
+.line{
+	display: inline-flex;
+	text-align: center;
+}
+
+.line div{
+	margin-left: 8%;
+}
+
