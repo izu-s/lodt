@@ -1,0 +1,136 @@
+@font-face {
+  font-family: Report;
+  src: url(../fonts/Report.otf);
+}
+
+@font-face {
+  font-family: 'Varela Round';
+  src: url(../fonts/VarelaRound-Regular.ttf);
+}
+
+:root {
+	--rojo: #EC774B;
+	--azul: #74CEE4;
+	--verde: #6FC191;
+	--amarillo: #EDBF47;
+	--azul-oscuro: #3FBAD9;
+	--verde-oscuro: #3d8f5f;
+	--rojo-oscuro: #e9612f;
+	--amarillo-palido: #F7EECA;
+	--gris-oscuro: #7B7B7B;
+	--gris-claro: #B5B5B5;
+}
+
+body{
+	font-family: Report;
+}
+
+#back, #salir, .back{
+	cursor: pointer;
+	position: fixed;
+	z-index: 1000;
+	background-color: var(--azul);
+	text-align: center;
+	top: 120px;
+}
+
+#back:hover, #salir:hover, .back:hover{
+	background: var(--azul);
+}
+
+#back{
+	top: 150px;
+}
+
+#back, .back{
+	left: 0px;
+	width: 6.9vw;
+	height: 3.7vw;
+	border-radius: 0px 1.9vw 1.9vw 0px;
+	background: rgba(63,186,217,1);
+	background: -moz-linear-gradient(left, rgba(63,186,217,1) 0%, rgba(116,206,228,1) 50%, rgba(190,233,243,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(63,186,217,1)), color-stop(50%, rgba(116,206,228,1)), color-stop(100%, rgba(190,233,243,1)));
+	background: -webkit-linear-gradient(left, rgba(63,186,217,1) 0%, rgba(116,206,228,1) 50%, rgba(190,233,243,1) 100%);
+	background: -o-linear-gradient(left, rgba(63,186,217,1) 0%, rgba(116,206,228,1) 50%, rgba(190,233,243,1) 100%);
+	background: -ms-linear-gradient(left, rgba(63,186,217,1) 0%, rgba(116,206,228,1) 50%, rgba(190,233,243,1) 100%);
+	background: linear-gradient(to right, rgba(63,186,217,1) 0%, rgba(116,206,228,1) 50%, rgba(190,233,243,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fbad9', endColorstr='#bee9f3', GradientType=1 );
+}
+
+#back img{
+	width: 3.5vw;
+}
+
+#salir{
+	font-family: 'Varela Round', sans-serif;
+	right: 0px;
+	width: 12vw;
+	height: 2.9vw;
+	padding-top: 1vw;
+	border-radius: 1.9vw 0px 0px 1.9vw;
+	font-size: 1.5vw;
+	top: 70px;
+	color: white;
+	background: rgba(233,248,251,1);
+	background: -moz-linear-gradient(left, rgba(233,248,251,1) 0%, rgba(190,233,243,1) 12%, rgba(126,212,231,1) 37%, rgba(116,206,228,1) 63%, rgba(63,186,217,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(233,248,251,1)), color-stop(12%, rgba(190,233,243,1)), color-stop(37%, rgba(126,212,231,1)), color-stop(63%, rgba(116,206,228,1)), color-stop(100%, rgba(63,186,217,1)));
+	background: -webkit-linear-gradient(left, rgba(233,248,251,1) 0%, rgba(190,233,243,1) 12%, rgba(126,212,231,1) 37%, rgba(116,206,228,1) 63%, rgba(63,186,217,1) 100%);
+	background: -o-linear-gradient(left, rgba(233,248,251,1) 0%, rgba(190,233,243,1) 12%, rgba(126,212,231,1) 37%, rgba(116,206,228,1) 63%, rgba(63,186,217,1) 100%);
+	background: -ms-linear-gradient(left, rgba(233,248,251,1) 0%, rgba(190,233,243,1) 12%, rgba(126,212,231,1) 37%, rgba(116,206,228,1) 63%, rgba(63,186,217,1) 100%);
+	background: linear-gradient(to right, rgba(233,248,251,1) 0%, rgba(190,233,243,1) 12%, rgba(126,212,231,1) 37%, rgba(116,206,228,1) 63%, rgba(63,186,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f8fb', endColorstr='#3fbad9', GradientType=1 );
+}
+
+#salir:hover, #back:hover, .back:hover{
+	width: 13vw;
+}
+
+.text{
+	font-family: 'Report';
+	color: #969696;
+	font-size: 2.8vw;
+}
+
+button{
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 2.8vw;
+	cursor: pointer;
+	width: 26.8vw;
+	height: 4.8vw;
+	padding: 0px;
+	border-radius: 47px;
+	background-color: var(--azul);
+}
+
+button a{
+	width: 26.1vw;
+	height: 4.1vw;
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 0px;
+	padding-top: 0.7vw;
+	padding-left: 0.7vw;
+}
+
+button:hover{
+	background-color: var(--azul-oscuro);
+}
+
+.button{
+	text-align: center;
+	padding-top: 30px;
+}
+
+#logo img{
+	position: fixed;
+	width: 170px;
+	left: 20px;
+	top: 40px;
+	z-index: 1000;
+}
+
