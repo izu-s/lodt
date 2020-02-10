@@ -32,6 +32,6 @@ function revisar(palabras){
       bien = bien + 1;
   }
 
-  alert("Tuviste bien "+ bien + " palabras de " + palabras.length+".");
+  document.getElementById("actividad").innerHTML = "<h2 id='act-title'>Crucigrama</h2><div id='resultado'>Tuviste bien "+ bien + " palabras de " + palabras.length+".</div>";
 }
 

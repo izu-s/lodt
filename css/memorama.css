@@ -118,3 +118,7 @@ memorama
 	-webkit-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 }
+
+#resultado{
+	background-color: var(--rojo);
+}

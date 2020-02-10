@@ -13,13 +13,13 @@ cartas.forEach((element)=>{
 
 function EnviarResultado() {
   numeroPares=guardaPares.length
-  alert("Obtuviste  " + numeroPares + " de " + "10 pares posibles.");
+  document.getElementById("actividad").innerHTML = "<h2 id='act-title'>Memorama</h2> <div id='resultado'>Obtuviste " + numeroPares + " de " + "5 pares posibles.</div>";
   fondo.removeEventListener("click")
 }
 
 function EnviarResultado2() {
-  numeroPares=guardaPares.length
-  alert("Obtuviste  " + numeroPares + " de " + "5 pares posibles.");
+  numeroPares=guardaPares.length;
+  document.getElementById("actividad").innerHTML = "<h2 id='act-title'>Memorama</h2> <div id='resultado'>Obtuviste " + numeroPares + " de " + "5 pares posibles.</div>";
   fondo.removeEventListener("click")
 }
 function daVueltas(gira,gira2){
