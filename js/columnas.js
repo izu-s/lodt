@@ -43,7 +43,7 @@ function juntar(e) {
 }
 
 function revisar(){
-	document.getElementById("actividad").innerHTML = "<h2 id='act-title'>Relación de columnas</h2> <div id='resultado'>Tuviste bien "+ bien +" aciertos de 6.</div>";
+	document.getElementById("actividad").innerHTML = "<h2 id='act-title'>Relación de columnas</h2> <div id='resultado'>Tuviste "+ bien +" aciertos de 6.</div>";
 }
 
 function reset() {
